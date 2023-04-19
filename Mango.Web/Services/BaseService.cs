@@ -69,7 +69,7 @@ namespace Mango.Web.Services
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            GC.SuppressFinalize(true);
         }
     }
 }
